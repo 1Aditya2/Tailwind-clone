@@ -4,187 +4,104 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      animation: {
-        marquee: "marquee 25s linear infinite",
-        "accordion-down": "accordion-down 0.3s ease-out",
-        "accordion-up": "accordion-up 0.3s ease-out",
-      },
-      keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" },
-        },
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        }
-      },
       fontFamily: {
-        sans: "var(--font-sans)",
-        mono: "var(--font-mono)",
-        display: "var(--font-display)",
-        secondary: "var(--font-secondary)",
+        sans: ['Outfit', 'sans-serif'],
       },
-      colors: {
-        white: "var(--color-white)",
-
-        green: {
-          100: "var(--color-green-100)",
-          200: "var(--color-green-200)",
-          300: "var(--color-green-300)",
-          400: "var(--color-green-400)",
-          500: "var(--color-green-500)",
-        },
-
-        blue: {
-          200: "var(--color-blue-200)",
-          400: "var(--color-blue-400)",
-          700: "var(--color-blue-700)",
-        },
-
-        purple: {
-          50: "var(--color-purple-50)",
-          200: "var(--color-purple-200)",
-          300: "var(--color-purple-300)",
-          600: "var(--color-purple-600)",
-        },
-
-        slate: {
-          200: "var(--color-slate-200)",
-        },
-
-        gray: {
-          50: "var(--color-gray-50)",
-          100: "var(--color-gray-100)",
-          200: "var(--color-gray-200)",
-          300: "var(--color-gray-300)",
-          400: "var(--color-gray-400)",
-          500: "var(--color-gray-500)",
-          600: "var(--color-gray-600)",
-          700: "var(--color-gray-700)",
-          800: "var(--color-gray-800)",
-          850: "var(--color-gray-850)",
-          900: "var(--color-gray-900)",
-        },
-
-        primary: {
-          25: "var(--color-primary-25)",
-          50: "var(--color-primary-50)",
-          100: "var(--color-primary-100)",
-          200: "var(--color-primary-200)",
-          300: "var(--color-primary-300)",
-          500: "var(--color-primary-500)",
-          600: "var(--color-primary-600)",
-          700: "var(--color-primary-700)",
-          800: "var(--color-primary-800)",
-          900: "var(--color-primary-900)",
-          DEFAULT: "var(--color-primary)",
-        },
-
-        error: {
-          100: "var(--color-error-100)",
-          400: "var(--color-error-400)",
-        },
-
-        orange: {
-          builders: "var(--color-orange-builders)",
-        },
-      },
-      spacing: {
-        base: "var(--spacing)",
-      },
-      maxWidth: {
-        "4xl": "var(--container-4xl)",
+      backgroundImage: {
+        "fade-x-right":
+          "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
+          "fade-x-left":
+          "linear-gradient(to left, transparent, black 20%, black 80%, transparent)",
       },
       fontSize: {
-        xs: ["var(--text-xs)", { lineHeight: "var(--text-xs--line-height)" }],
-        sm: ["var(--text-sm)", { lineHeight: "var(--text-sm--line-height)" }],
-        base: ["var(--text-base)", { lineHeight: "var(--text-base--line-height)" }],
-        lg: ["var(--text-lg)", { lineHeight: "var(--text-lg--line-height)" }],
-        xl: ["var(--text-xl)", { lineHeight: "var(--text-xl--line-height)" }],
-        "2xl": ["var(--text-2xl)", { lineHeight: "var(--text-2xl--line-height)" }],
-        "3xl": ["var(--text-3xl)", { lineHeight: "var(--text-3xl--line-height)" }],
-        "display-xl": [
-          "var(--text-display-xl)",
-          { lineHeight: "var(--text-display-xl--line-height)" },
-        ],
-        "display-lg": ["var(--text-display-lg)"],
-        "display-md": [
-          "var(--text-display-md)",
-          { lineHeight: "var(--text-display-md--line-height)" },
-        ],
-        "display-sm": [
-          "var(--text-display-sm)",
-          { lineHeight: "var(--text-display-sm--line-height)" },
-        ],
-        "display-xs": [
-          "var(--text-display-xs)",
-          { lineHeight: "var(--text-display-xs--line-height)" },
-        ],
-        "display-2xs": [
-          "var(--text-display-2xs)",
-          { lineHeight: "var(--text-display-2xs--line-height)" },
-        ],
-        "body-xl": [
-          "var(--text-body-xl)",
-          { lineHeight: "var(--text-body-xl--line-height)" },
-        ],
-        "body-lg": [
-          "var(--text-body-lg)",
-          { lineHeight: "var(--text-body-lg--line-height)" },
-        ],
-        "body-md": [
-          "var(--text-body-md)",
-          { lineHeight: "var(--text-body-md--line-height)" },
-        ],
-        "body-sm": [
-          "var(--text-body-sm)",
-          { lineHeight: "var(--text-body-sm--line-height)" },
-        ],
-      },
-      fontWeight: {
-        light: "var(--font-weight-light)",
-        normal: "var(--font-weight-normal)",
-        medium: "var(--font-weight-medium)",
-        semibold: "var(--font-weight-semibold)",
-        bold: "var(--font-weight-bold)",
+        xs: ["0.75rem", "1rem"],   
+        sm: ["0.875rem", "1.25rem"], 
+        base: ["1rem", "1.5rem"],  
+        lg: ["1.125rem", "1.75rem"], 
+        xl: ["1.25rem", "1.75rem"],
+        "2xl": ["1.5rem", "2rem"],
+        "3xl": ["1.875rem", "2.25rem"],
+        "4xl": ["2.25rem", "2.5rem"],   
+        "5xl": ["3rem", "1"],         
       },
       letterSpacing: {
-        widest: "var(--tracking-widest)",
-      },
-
-      lineHeight: {
-        tight: "var(--leading-tight)",
-        relaxed: "var(--leading-relaxed)",
-      },
-
+        tightest: "-2.75px",
+        tighter: "-1.04px",
+        tight: "-0.32px",
+        normal: "-0.14px",
+        wide: "0.12px",
+      },      
+      boxShadow: {
+        xs: "0px 1px 2px rgba(16,24,40,0.05)",
+        sm: "0px 1px 3px rgba(16,24,40,0.1), 0px 1px 2px rgba(16,24,40,0.06)",
+        md: "0px 4px 6px rgba(0,0,0,0.1), 0px 2px 4px rgba(0,0,0,0.1)",
+        lg: "0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03)",
+        feature: "0 4px 34px 26px #fcfcfc inset",
+      },      
       borderRadius: {
-        lg: "var(--radius-lg)",
-        xl: "var(--radius-xl)",
-        "2xl": "var(--radius-2xl)",
-        "3xl": "var(--radius-3xl)",
-      },
-
-      blur: {
-        sm: "var(--blur-sm)",
-        xl: "var(--blur-xl)",
-      },
-
-      borderWidth: {
-        "1.5": "var(--border-width-1-5)",
-      },
-
-      transitionDuration: {
-        DEFAULT: "var(--default-transition-duration)",
-      },
-      transitionTimingFunction: {
-        DEFAULT: "var(--default-transition-timing-function)",
-        "ease-in-out": "var(--ease-in-out)",
-      },
+        sm: "0.375rem",
+        md: "0.5rem",
+        lg: "0.75rem",
+        xl: "1rem",
+        "2xl": "1.5rem",
+      },      
+      colors: {
+        primary: {
+          DEFAULT: "#465FFF",
+          25: "#F2F7FF",
+          50: "#ECF3FF",
+          100: "#DDE9FF",
+          200: "#C2D6FF",
+          300: "#9CB9FF",
+          400: "#7B90B5",
+          500: "#465FFF",
+          600: "#3641F5",
+        },
+      
+        gray: {
+          25: "#FCFCFD",
+          50: "#F9FAFB",
+          100: "#F2F4F7",
+          200: "#E4E7EC",
+          300: "#D0D5DD",
+          400: "#98A2B3",
+          500: "#667085",
+          600: "#475467",
+          700: "#344054",
+          800: "#1D2939",
+          900: "#101828",
+        },
+      
+        success: {
+          50: "#ECFDF3",
+          500: "#12B76A",
+          600: "#039855",
+          700: "#027A48",
+        },
+      
+        error: {
+          50: "#FEF3F2",
+          500: "#F04438",
+          600: "#D92D20",
+          700: "#B42318",
+        },
+      
+        warning: {
+          25: "#FFFCF5",
+          50: "#FFFAEB",
+          500: "#F79009",
+          600: "#DC6803",
+          700: "#B54708",
+        },
+      
+        title: "#1D2939",
+        text: "#344054",
+        "text-secondary": "#667085",
+        "text-tertiary": "#98A2B3",
+        stroke: "#E4E7EC",
+        "stroke-secondary": "#F2F4F7",
+        "stroke-tertiary": "#D0D5DD",
+      }
     },
   },
   plugins: []
