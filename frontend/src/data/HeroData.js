@@ -20,7 +20,7 @@ export const herolistItems = [
     },
     {
         icon:<HTML className="w-7 h-7"/>,
-        label: 'HTML'
+        label: 'HTML5'
     },
     {
         icon:<ReactSVG className="w-7 h-7"/>,
@@ -28,11 +28,11 @@ export const herolistItems = [
     },
     {
         icon:<Next className="w-7 h-7"/>,
-        label: 'Next'
+        label: 'Next.js'
     },
     {
         icon:<Vercel className="w-7 h-7"/>,
-        label: 'Vue'
+        label: 'Vue.js'
     },
     {
         icon:<Angular className="w-7 h-7"/>,
@@ -48,6 +48,6 @@ export const herolistItems = [
     },
     {
         icon:<Alpine className="w-7 h-7"/>,
-        label: 'Alpine'
+        label: 'Alpine.js'
     }
 ]

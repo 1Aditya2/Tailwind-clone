@@ -24,7 +24,7 @@ export default function HoverDropdown({
                     {label}
                 </span>
 
-                <div className="relative w-4 h-4">
+                <div className="relative w-5 h-5">
                     <ChevronUp
                         size={20}
                         className={`absolute inset-0 transition-all duration-200 ${open ? "opacity-100 text-primary" : "opacity-0"

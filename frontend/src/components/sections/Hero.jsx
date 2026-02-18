@@ -1,8 +1,9 @@
 import React from 'react'
-import LeftPart from '../../assets/Hero/LeftPart'
-import TotalLeft from '../../assets/Hero/TotalLeft'
-import RightPart from '../../assets/Hero/RightPart'
+import LeftPart from '../../assets/Hero/LeftPart';
+import TotalLeft from '../../assets/Hero/TotalLeft';
+import RightPart from '../../assets/Hero/RightPart';
 import WholePart from '../../assets/Hero/WholePart'
+import RightPart2 from '../../assets/Hero/RightPart2';
 import Starbadge from '../../assets/Hero/Starbadge'
 import { herolistItems } from '../../data/HeroData'
 import Button from '../ui/Button'
@@ -11,7 +12,7 @@ import image3 from '../../assets/Hero/image-3.webp'
 
 const Hero = () => {
     return (
-        <section className='overflow-hidden px-4 pt-20 sm:px-8 xl:px-12.5'>
+        <section className='overflow-hidden px-4 pt-20 sm:px-8 xl:px-[3.125rem]'>
             <div className="relative z-10 overflow-hidden rounded-3xl bg-gray-50 pt-12 md:pt-14 lg:pt-20">
                 <div className='relative z-10 mx-auto px-4 sm:px-8 xl:px-0'>
                     <div className='text-center'>
@@ -22,8 +23,8 @@ const Hero = () => {
                             <p className='text-sm'>Industry-leading Tailwind CSS Dashboard Kit with Multi-Framework Support
                             </p>
                         </div>
-                        <h1 class="mx-auto mb-4 w-full max-w-[810px] text-3xl font-bold text-title-color sm:text-4xl lg:text-5xl">Open-Source Tailwind CSS Admin Dashboard Template</h1>
-                        <p class="mx-auto mb-9 w-full max-w-[1090px] text-text-secondary">TailAdmin is a Tailwind CSS-based Admin Dashboard Template that provides developers with everything they need to create feature-rich back-ends, dashboards, and admin panels for web projects. Empowering developers with essential UI components, elements, and pages required to build a complete Dashboard or Admin panel – Now available for HTML, React, Next.js, Vue, Angular and Laravel!</p>
+                        <h1 class="mx-auto mb-4 w-full max-w-[810px] text-3xl font-bold text-title sm:text-4xl lg:text-5xl">Open-Source Tailwind CSS Admin Dashboard Template</h1>
+                        <p class="mx-auto font-light mb-9 w-full max-w-[1090px] text-text-secondary">TailAdmin is a Tailwind CSS-based Admin Dashboard Template that provides developers with everything they need to create feature-rich back-ends, dashboards, and admin panels for web projects. Empowering developers with essential UI components, elements, and pages required to build a complete Dashboard or Admin panel – Now available for HTML, React, Next.js, Vue, Angular and Laravel!</p>
                         <ul className='flex flex-wrap items-center justify-center gap-4'>
                             {herolistItems.map(({ icon, label }) => {
                                 return (
@@ -35,8 +36,8 @@ const Hero = () => {
                             })}
                         </ul>
                         <div className='mt-9 flex flex-wrap justify-center gap-3.5'>
-                            <Button className='!shadow-xs'>Download Now</Button>
-                            <Button variant='secondary'>Live Preview</Button>
+                            <Button className='!text-base'>Download Now</Button>
+                            <Button className='!text-base' variant='secondary'>Live Preview</Button>
                         </div>
                         <div className='mt-[60px]'>
                             <div className='relative mx-auto w-full max-w-[745px] max-lg:px-10'>
@@ -57,13 +58,13 @@ const Hero = () => {
                     <TotalLeft />
                 </div>
                 <div className='absolute bottom-0 left-1/2 -translate-x-1/2'>
-                    <TotalLeft />
+                    <WholePart />
                 </div>
                 <div className='absolute bottom-0 right-0 max-sm:hidden'>
                     <RightPart />
                 </div>
                 <div className='absolute bottom-0 right-0 max-sm:hidden'>
-                    <WholePart />
+                    <RightPart2 />
                 </div>
             </div>
         </section>

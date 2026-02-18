@@ -7,7 +7,7 @@ import Figma from '../../assets/Hero/Figma';
 const Features = () => {
     return (
         <section className='pt-16 md:pt-24 lg:pt-30'>
-            <div className='container mx-auto mb-12 w-full max-w-[810px] text-center lg:mb-15"'>
+            <div className='container mx-auto mb-12 w-full max-w-[810px] text-center lg:mb-[3.75rem]'>
                 <p className='mb-3 text-lg text-primary'>Ready to use with your favourite front-end tools</p>
                 <h2 className='text-3xl font-bold !leading-[1.2] text-title md:text-[40px]'>
                     TailAdmin is now available for HTML, React, Next.js, Laravel, Vue Angular and Laravel

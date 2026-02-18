@@ -6,7 +6,7 @@ import { listDetails } from '../../data/Navdata';
 const Footer = () => {
     return (
         <div className='relative overflow-hidden bg-[#101828] pt-16 md:pt-24 lg:pt-[7.5rem]'>
-            <div className='container px-4 mx-auto w-full'>
+            <div className='container px-16 mx-auto w-full'>
                 <div className='flex gap-10 max-xl:flex-wrap lg:justify-between'>
                     <div className='max-w-[388px] flex flex-col items-start justify-between'>
                         <span className='mb-6 inline-block'>
@@ -34,7 +34,7 @@ const Footer = () => {
                                 <ul className='flex flex-col gap-3'>
                                     {new Array(4).fill('').map((e, i) => {
                                         return (
-                                            <li key={i} className='text-base cursor-pointer text-[#98A2B3] duration-200 hover:text-white hover:underline'>
+                                            <li key={i} className='text-base font-light cursor-pointer text-[#98A2B3] duration-200 hover:text-white hover:underline'>
                                                 Documentation
                                             </li>
                                         );
@@ -47,10 +47,10 @@ const Footer = () => {
                         <p className='mb-7 text-xl text-white'>
                             Newsletter
                         </p>
-                        <p className='text-base text-[#98A2B3]'>
+                        <p className='text-base font-light text-[#98A2B3]'>
                             Subscribe for the latest updates
                         </p>
-                        <PillInput className='mt-6' rightSlot={<Button className='!rounded-full !mr-1'>Subscribe</Button>} />
+                        <PillInput className='mt-6' rightSlot={<Button className='!rounded-full !text-sm !mr-1'>Subscribe</Button>} />
                     </div>
                 </div>
                 <div className='pt-[90px] mb-5'>

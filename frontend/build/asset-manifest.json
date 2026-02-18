@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fab4d019.css",
+    "main.js": "/static/js/main.e4e9834d.js",
+    "static/media/image-3-3.webp": "/static/media/image-3-3.9ebd5facb6d3e558ab5c.webp",
+    "static/media/glow-effect.webp": "/static/media/glow-effect.f0ad41a7696500d007d4.webp",
+    "static/media/componentImage.png": "/static/media/componentImage.a63945836e79c17282a9.png",
+    "static/media/cardImage.webp": "/static/media/cardImage.98d5a398837f9a3bcf5d.webp",
+    "static/media/main-image.webp": "/static/media/main-image.12619553c06037586ccf.webp",
+    "static/media/image-7.webp": "/static/media/image-7.86d319db98d43330e4db.webp",
+    "static/media/componentImage-1.webp": "/static/media/componentImage-1.d4a568cb019fc6992b66.webp",
+    "static/media/tailwind.svg": "/static/media/tailwind.c8f84040a4ac8b5aca3b944fd3a31ca7.svg",
+    "static/media/image-3.webp": "/static/media/image-3.3173db160213fcc2099b.webp",
+    "index.html": "/index.html",
+    "static/media/avatar-3.webp": "/static/media/avatar-3.0ef344d6ea851ce3f31d.webp",
+    "main.fab4d019.css.map": "/static/css/main.fab4d019.css.map",
+    "main.e4e9834d.js.map": "/static/js/main.e4e9834d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fab4d019.css",
+    "static/js/main.e4e9834d.js"
+  ]
+}

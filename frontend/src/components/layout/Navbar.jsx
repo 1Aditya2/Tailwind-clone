@@ -24,7 +24,7 @@ function Navbar({ setShow ,show }) {
     return (
 
         <header className={`fixed bg-white left-0 top-0 z-[99999] w-full text-title ${scrolled ? 'shadow transition-shadow' : ''}`}>
-            <div className='flex items-center gap-7 justify-between relative px-4 py-4 sm:px-8 xl:flex xl:gap-7 xl:px-12.5 xl:py-0 2xl:gap-0'>
+            <div className='relative items-center justify-between px-4 py-4 sm:px-8 flex xl:gap-7 xl:px-[3.125rem] xl:py-0 2xl:gap-0'>
                 <div className='flex items-center xl:w-1/4 gap-1'>
                     <img src={tailwindsvg} alt='tailwindsvg' />
                     <VersionDropdown />
@@ -46,15 +46,15 @@ function Navbar({ setShow ,show }) {
                         </ul>
                     </nav>
                     <div className='flex items-center gap-3'>
-                        <div className='p-2 cursor-pointer flex items-center rounded-full gap-[5px] bg-gray-100 hover:bg-gray-200'>
+                        <div className='p-2 cursor-pointer flex h-8 items-center rounded-full gap-[5px] bg-gray-100 hover:bg-gray-200'>
                             <Github />
                             <span class="text-sm text-text">1.9k+</span>
                         </div>
                         <div className='flex flex-col gap-3.5 xl:flex-row xl:items-center'>
-                            <HoverDropdown labelClassName='text-white text-sm' parentClassName='!shadow-xs !bg-text !hover:bg-title !gap-2 !py-3 !px-4 !rounded-md' label={'Live Preview'} items={[
+                            <HoverDropdown labelClassName='text-white text-sm' parentClassName='!bg-text !hover:bg-title !gap-2 !py-3 !px-4 !rounded-md' label={'Live Preview'} items={[
                                 <div className='flex items-center gap-3'><HTML /><span className='text-sm'>Preview HTML</span></div>
                             ]} />
-                            <Button className='!px-6 !py-3'>
+                            <Button className='!px-5 !py-3'>
                                 <div className='flex items-center gap-2'>
                                     <Queen />
                                     <span className='text-sm'>Pricing & FAQ</span>

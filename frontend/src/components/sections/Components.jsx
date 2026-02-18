@@ -4,7 +4,7 @@ import componentImage from '../../assets/Components/componentImage.png'
 const Components = () => {
     return (
         <section className='relative z-10 bg-white py-16 md:py-24 lg:py-[7.5rem]'>
-            <div className='container px-4 w-full mx-auto'>
+            <div className='container px-16 w-full mx-auto'>
                 <div className='mx-auto mb-12 w-full max-w-[470px] text-center lg:mb-[3.75rem]'>
                     <p class="mb-5 text-lg text-primary">Other Notable Features</p>
                     <p className='text-3xl font-bold !leading-[1.2] text-title-color md:text-[40px]'>
@@ -12,7 +12,7 @@ const Components = () => {
                     </p>
                 </div>
             </div>
-            <div className='container px-4 w-full mx-auto'>
+            <div className='container px-16 w-full mx-auto'>
                 <div className='mx-auto grid w-full max-w-[1170px] space-y-16 md:space-y-24 lg:space-y-[130px]'>
                     {[new Array(4).fill('').map((e, i) => {
                         return (

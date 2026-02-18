@@ -13,6 +13,7 @@ import DashboardAd from './components/sections/DashboardAd';
 import BlogsnUpdates from './components/sections/BlogsnUpdates';
 import Footer from './components/layout/Footer';
 import MobileNavbar from './components/layout/MobileNavbar';
+import TopNav from './components/sections/TopNav';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -33,6 +34,7 @@ function App() {
       <DashboardAd />
       <BlogsnUpdates />
       <Footer />
+      <TopNav/>
     </div>
   );
 }

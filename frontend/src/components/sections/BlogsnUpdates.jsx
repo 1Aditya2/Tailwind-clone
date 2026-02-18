@@ -6,13 +6,13 @@ import Button from '../ui/Button';
 const BlogsnUpdates = () => {
     return (
         <section className='py-16 md:py-24 lg:pt-30'>
-            <div className='container px-4 mx-auto w-full'>
+            <div className='container px-16 mx-auto w-full'>
                 <div className='mx-auto mb-12 w-full max-w-[880px] text-center lg:mb-[3.75rem]'>
                     <p class="mb-5 text-lg text-primary">Blogs and Updates</p>
                     <p class="text-3xl font-bold !leading-[1.2] text-title md:text-[40px]">Our Latest Blogs</p>
                 </div>
             </div>
-            <div className='container px-4 mx-auto w-full'>
+            <div className='container px-16 mx-auto w-full'>
                 <div className='grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-3'>
                     {new Array(3).fill('').map((e) => {
                         return (
@@ -28,8 +28,8 @@ const BlogsnUpdates = () => {
                                     <p className='mb-2 cursor-pointer line-clamp-2 text-xl font-medium text-title duration-200 hover:text-primary'>
                                     15+ Best Laravel Dashboard Templates for 2026
                                     </p>
-                                    <p className='mb-5 line-clamp-4 text-base text-text-secondary'>Explore the 15+best Larael Dashboard Templates for 2026. Build a modern, fast, and responsive admin dashboard in hours!</p>
-                                    <Button className='!px-5'>
+                                    <p className='mb-5 line-clamp-4 text-base text-text-secondary font-light'>Explore the 15+best Larael Dashboard Templates for 2026. Build a modern, fast, and responsive admin dashboard in hours!</p>
+                                    <Button className='!px-5 !text-sm'>
                                         Read More
                                         <ArrowRight size={18}/>
                                     </Button>

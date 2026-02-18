@@ -30,13 +30,13 @@ export default function VersionDropdown({
         onClick={() => setOpen((o) => !o)}
         className="flex items-center gap-2 px-2 py-1 rounded-full cursor-pointer bg-gray-100"
       >
-        <span className="text-xs font-medium text-text-secondary">
+        <span className="text-xs text-text-secondary">
           {selected}
         </span>
         {open ? (
-          <ChevronUp size={16} className="text-text-secondary" />
+          <ChevronUp size={14} className="text-text-secondary" />
         ) : (
-          <ChevronDown size={16} className="text-text-secondary" />
+          <ChevronDown size={14} className="text-text-secondary" />
         )}
       </button>
       {open && (
