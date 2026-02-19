@@ -5,7 +5,7 @@ import apexchart from '../../assets/Footer/apexchart.webp';
 const Plugins = () => {
   return (
     <section className='bg-white pt-16 md:pt-24 lg:pt-[7.5rem]'>
-        <div className='container px-16 w-full mx-auto'>
+        <div className='container'>
             <div className='mx-auto mb-12 w-full max-w-[770px] text-center lg:mb-[3.75rem]'>
                 <p className='mb-5 inline-block text-lg text-primary'>
                 Powerful Toolkit
@@ -15,7 +15,7 @@ const Plugins = () => {
                 </p>
             </div>
         </div>
-        <div className='container w-full px-16 mx-auto'>
+        <div className='container'>
             <div className='grid grid-cols-1 gap-[1.875rem] sm:grid-cols-2 lg:grid-cols-3'>
                 {new Array(6).fill('').map((e,i) => {
                     return (

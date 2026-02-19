@@ -6,7 +6,7 @@ import image3 from '../../assets/Components/componentImage-1.webp'
 const DashboardVariations = () => {
     return (
         <section className='bg-gray-50 py-16 md:py-24 lg:py-[110px]'>
-            <div className='container mx-auto w-full px-16'>
+            <div className='container'>
                 <div className='mx-auto mb-12 w-full max-w-[870px] text-center lg:mb-[3.75rem]'>
                     <p className='mb-5 inline-block text-lg text-primary'>
                         7 Dashboard Variations
@@ -16,7 +16,7 @@ const DashboardVariations = () => {
                     </h2>
                 </div>
             </div>
-            <div className='container mx-auto w-full px-16'>
+            <div className='container'>
                 <div className='mb-20 grid gap-5 sm:grid-cols-2 sm:gap-[1.875rem] xl:gap-[3.125rem]'>
                     {new Array(7).fill('').map((e, i) => {
                         return (

@@ -9,7 +9,7 @@ import MiddlePart from '../../assets/DashboardAd/MiddlePart'
 const DashboardAd = () => {
     return (
         <section className='overflow-hidden bg-white pt-16 md:pt-14 lg:pt-[7.5rem]'>
-            <div className='container px-16 mx-auto w-full'>
+            <div className='container'>
                 <div className='relative z-10 w-full justify-between overflow-hidden rounded-3xl bg-gray-800 px-8 pt-20 md:pl-[3.75rem] md:pr-10 lg:flex'>
                     <div className='flex flex-col gap-1 items-start pb-[3.25rem] lg:max-w-[470px]'>
                         <p className='text-gray-400 mb-3'>What are you waiting for?</p>

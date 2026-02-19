@@ -6,7 +6,7 @@ import avatar from '../../assets/avatar-3.webp'
 const TrustedBy = () => {
     return (
         <section className='pt-[4.375rem]'>
-            <div className='container mx-auto w-full px-16'>
+            <div className='container'>
                 <div>
                     <h2 class="mb-8 text-center text-lg text-text">Trusted by over 80,000 individuals and companies worldwide.</h2>
                     <div className='relative mb-[3.25rem]'>

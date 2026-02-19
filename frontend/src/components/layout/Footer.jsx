@@ -6,7 +6,7 @@ import { listDetails } from '../../data/Navdata';
 const Footer = () => {
     return (
         <div className='relative overflow-hidden bg-[#101828] pt-16 md:pt-24 lg:pt-[7.5rem]'>
-            <div className='container px-16 mx-auto w-full'>
+            <div className='container'>
                 <div className='flex gap-10 max-xl:flex-wrap lg:justify-between'>
                     <div className='max-w-[388px] flex flex-col items-start justify-between'>
                         <span className='mb-6 inline-block'>
