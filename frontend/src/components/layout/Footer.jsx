@@ -3,6 +3,7 @@ import Discord from '../../assets/Footer/Discord';
 import PillInput from '../ui/Input';
 import Button from '../ui/Button';
 import { listDetails } from '../../data/Navdata';
+import { footerData } from '../../data/footerData';
 const Footer = () => {
     return (
         <div className='relative overflow-hidden bg-[#101828] pt-16 md:pt-24 lg:pt-[7.5rem]'>
@@ -25,17 +26,17 @@ const Footer = () => {
                             })}
                         </div>
                     </div>
-                    {new Array(2).fill('').map((e, i) => {
+                    {footerData.map(({ title, subLinks }, i) => {
                         return (
                             <div key={i} className='w-full sm:w-auto'>
                                 <p className='mb-7 text-xl text-white'>
-                                    Useful Links
+                                    {title}
                                 </p>
                                 <ul className='flex flex-col gap-3'>
-                                    {new Array(4).fill('').map((e, i) => {
+                                    {subLinks.map((e, i) => {
                                         return (
-                                            <li key={i} className='text-base font-light cursor-pointer text-[#98A2B3] duration-200 hover:text-white hover:underline'>
-                                                Documentation
+                                            <li key={i} className='text-base cursor-pointer text-[#98A2B3] duration-200 hover:text-white hover:underline'>
+                                                {e}
                                             </li>
                                         );
                                     })}

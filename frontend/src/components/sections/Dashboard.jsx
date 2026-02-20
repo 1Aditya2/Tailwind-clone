@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../ui/Card';
 import { Code } from 'lucide-react';
+import { dashboardData, dashboardData2 } from '../../data/featuresData';
 
 const Dashboard = () => {
     return (
@@ -15,7 +16,7 @@ const Dashboard = () => {
             </div>
             <div className='container'>
                 <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:gap-[1.875rem]'>
-                    {new Array(6).fill('').map((e) => {
+                    {dashboardData.map(({ title, content }) => {
                         return (
                             <Card>
                                 <div className='flex items-start justify-start flex-col gap-1'>
@@ -23,10 +24,10 @@ const Dashboard = () => {
                                     <Code className='text-primary w-full h-full'/>
                                     </div>
                                     <p className='mb-4 font-medium text-xl text-title md:text-2xl lg:text-xl xl:text-2xl'>
-                                        Built-with Tailwind CSS
+                                        {title}
                                     </p>
                                     <p className='text-base font-light !leading-normal text-text-secondary'>
-                                        Meticulously crafted with Tailwind CSS to provide a highly composable and customizable foundation. Quickly build and adjust styles using concise, semantic, and human-readable utility classes.
+                                       {content}
                                     </p>
                                 </div>
                             </Card>
@@ -34,7 +35,7 @@ const Dashboard = () => {
                     })}
                 </div>
                 <div className='mt-[3.125rem] grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-[1.875rem] xl:gap-y-6'>
-                    {new Array(9).fill('').map((e) => {
+                    {dashboardData2.map((e) => {
                         return (
                             <div className='flex items-center gap-4 rounded-3xl border border-stroke-secondary bg-white px-4 py-3 duration-200 hover:border-primary-200 md:px-[1.875rem] md:py-6'>
                                 <div className='flex items-center gap-4'>
@@ -42,7 +43,7 @@ const Dashboard = () => {
                                     <Code className='text-primary w-full h-full'/>
                                     </div>
                                     <p className='text-lg font-medium text-text md:text-xl lg:text-lg xl:text-xl'>
-                                        Fully Responsive
+                                        {e}
                                     </p>
                                 </div>
                             </div>

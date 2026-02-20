@@ -2,6 +2,7 @@ import React from 'react'
 import cardImage from '../../assets/Blogs/cardImage.webp'
 import { ArrowRight, Calendar } from 'lucide-react';
 import Button from '../ui/Button';
+import { blogsData } from '../../data/pluginsData';
 
 const BlogsnUpdates = () => {
     return (
@@ -14,7 +15,7 @@ const BlogsnUpdates = () => {
             </div>
             <div className='container'>
                 <div className='grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-3'>
-                    {new Array(3).fill('').map((e) => {
+                    {blogsData.map(({ date, title, content }) => {
                         return (
                             <div className='group flex flex-col rounded-3xl border border-stroke bg-white p-2'>
                                 <div className='block cursor-pointer aspect-[443/224] overflow-hidden rounded-2xl'>
@@ -23,12 +24,12 @@ const BlogsnUpdates = () => {
                                 <div className='flex h-full items-start flex-1 flex-col justify-between p-5'>
                                     <div className='mb-4 inline-flex gap-2 text-sm font-medium text-text-tertiary'>
                                         <Calendar size={16} />
-                                        <p>11 Dec 2026</p>
+                                        <p>{date}</p>
                                     </div>
                                     <p className='mb-2 cursor-pointer line-clamp-2 text-xl font-medium text-title duration-200 hover:text-primary'>
-                                    15+ Best Laravel Dashboard Templates for 2026
+                                    {title}
                                     </p>
-                                    <p className='mb-5 line-clamp-4 text-base text-text-secondary font-light'>Explore the 15+best Larael Dashboard Templates for 2026. Build a modern, fast, and responsive admin dashboard in hours!</p>
+                                    <p className='mb-5 line-clamp-4 text-base text-text-secondary font-light'>{content}</p>
                                     <Button className='!px-5 !text-sm'>
                                         Read More
                                         <ArrowRight size={18}/>

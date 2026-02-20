@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../ui/Card';
 import apexchart from '../../assets/Footer/apexchart.webp';
+import { plugInsData } from '../../data/pluginsData';
 
 const Plugins = () => {
   return (
@@ -17,7 +18,7 @@ const Plugins = () => {
         </div>
         <div className='container'>
             <div className='grid grid-cols-1 gap-[1.875rem] sm:grid-cols-2 lg:grid-cols-3'>
-                {new Array(6).fill('').map((e,i) => {
+                {plugInsData.map(({ title, content },i) => {
                     return (
                         <Card key={i}>
                             <div className='flex items-start justify-start flex-col'>
@@ -25,10 +26,10 @@ const Plugins = () => {
                                         <img src={apexchart} alt='apexChart' className='w-full h-full'/>
                                     </div>
                                     <p className='mb-3 font-medium text-xl text-title md:text-2xl lg:text-xl xl:text-2xl'>
-                                        Apex Charts
+                                        {title}
                                     </p>
                                     <p className='text-base font-light !leading-normal text-text-secondary'>
-                                    High-quality, Modern & Interactive Charts for Data visualization
+                                    {content}
                                     </p>
                                 </div>
                         </Card>

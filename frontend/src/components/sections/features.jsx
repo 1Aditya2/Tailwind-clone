@@ -3,6 +3,7 @@ import Card from '../ui/Card'
 import { ChevronRight, Plus } from 'lucide-react';
 import Alpine from '../../assets/Hero/Alpine';
 import Figma from '../../assets/Hero/Figma';
+import { featuresData } from '../../data/featuresData';
 
 const Features = () => {
     return (
@@ -15,12 +16,12 @@ const Features = () => {
             </div>
             <div className='px-4 xl:px-10 2xl:px-16 min-[1800px]:px-[113px]'>
                 <div className='grid gap-[1.875rem] sm:grid-cols-2 lg:grid-cols-3'>
-                    {new Array(6).fill('').map((e, i) => {
+                    {featuresData.map(({ title, content }, i) => {
                         return (
                             <Card key={i}>
                                 <div className='flex justify-between items-center gap-4 flex-col'>
-                                    <h2 className='mb-7.5 text-xl text-title font-medium'>
-                                        HTML + Tailwind
+                                    <h2 className='mb-7.5 text-xl text-title font-semibold'>
+                                        {title}
                                     </h2>
                                     <div className='flex cursor-pointer items-center justify-center rounded-full border-[14px] border-gray-25 bg-gray-25'>
                                         <div className='flex items-center justify-center gap-3 rounded-full border-[6px] border-gray-100 bg-white p-2.5'>
@@ -34,7 +35,7 @@ const Features = () => {
                                         </div>
                                     </div>
                                     <p className='mb-[1.875rem] text-center text-base text-text-secondary'>
-                                    TailAdmin HTML: Built-with Tailwind CSS, HTML and Alpine.js
+                                    {content}
                                     </p>
                                     <p className='flex cursor-pointer h-12 w-full items-center justify-center gap-1.5 rounded-lg bg-primary-25 text-sm text-primary duration-200 group-hover:bg-primary group-hover:text-white hover:!bg-primary-600'>
                                         Explore Now
