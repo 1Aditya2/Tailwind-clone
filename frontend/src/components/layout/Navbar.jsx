@@ -1,25 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import tailwindsvg from '../../assets/tailwind.svg';
 import VersionDropdown from '../ui/VersionDropdown';
-import { Navitems } from '../../data/Navdata';
+import { listDetailsLivePreview, Navitems } from '../../data/Navdata';
 import HoverDropdown from '../ui/HoverDropDown';
 import Github from '../../assets/Github';
-import HTML from '../../assets/html';
 import Button from '../ui/Button';
 import Queen from '../../assets/Queen';
 import { Menu, X } from 'lucide-react';
 
-function Navbar({ setShow ,show }) {
+function Navbar({ setShow, show }) {
     const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
+    useEffect(() => {
+        const onScroll = () => {
+            setScrolled(window.scrollY > 10);
+        };
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    const livePreviewDropDown = listDetailsLivePreview.map(({ icon, paragraph }) => {
+        return (
+            <div className='flex items-center gap-3'>
+                {icon}
+                <span className='text-sm font-medium'>{paragraph}</span>
+            </div>
+        );
+    })
 
     return (
 
@@ -30,8 +38,8 @@ function Navbar({ setShow ,show }) {
                     <VersionDropdown />
                 </div>
                 <div className='xl:hidden'>
-                {!show && <Menu size={24} onClick={() => setShow(true)}/>}
-                {show && <X size={24} onClick={() => setShow(false)}/>}
+                    {!show && <Menu className='text-text' size={24} onClick={() => setShow(true)} />}
+                    {show && <X className='text-text' size={24} onClick={() => setShow(false)} />}
                 </div>
                 <div className='w-3/4 flex visible max-xl:hidden justify-between items-center'>
                     <nav>
@@ -51,9 +59,11 @@ function Navbar({ setShow ,show }) {
                             <span class="text-sm text-text">1.9k+</span>
                         </div>
                         <div className='flex flex-col gap-3.5 xl:flex-row xl:items-center'>
-                            <HoverDropdown labelClassName='text-white text-sm' parentClassName='!bg-text !hover:bg-title !gap-2 !py-3 !px-4 !rounded-md' label={'Live Preview'} items={[
-                                <div className='flex items-center gap-3'><HTML /><span className='text-sm'>Preview HTML</span></div>
-                            ]} />
+                            <HoverDropdown
+                                labelClassName='text-white text-sm'
+                                parentClassName='!bg-text !hover:bg-title !gap-2 !py-3 !px-4 !rounded-md'
+                                label={'Live Preview'} items={livePreviewDropDown}
+                            />
                             <Button className='!px-5 !py-3'>
                                 <div className='flex items-center gap-2'>
                                     <Queen />

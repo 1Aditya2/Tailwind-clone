@@ -54,11 +54,11 @@ function DefaultMenu({ items, children }) {
     return (
         <>
             {children ? children : <div className="min-w-[270px] w-full rounded-xl bg-white border border-gray-200 shadow-lg p-3">
-                <ul className="w-full">
+                <ul className="w-full flex flex-col gap-1 items-start">
                     {items.map((item) => (
                         <li
                             key={item}
-                            className="text-text-secondary p-3 rounded-md text-sm hover:bg-gray-100 hover:text-text cursor-pointer"
+                            className="text-text-secondary p-3 w-full rounded-md text-sm hover:bg-gray-100 hover:text-text cursor-pointer"
                         >
                             {item}
                         </li>
