@@ -51,7 +51,7 @@ const Footer = () => {
                         <p className='text-base font-light text-[#98A2B3]'>
                             Subscribe for the latest updates
                         </p>
-                        <PillInput className='mt-6' rightSlot={<Button className='!rounded-full !text-sm !mr-1'>Subscribe</Button>} />
+                        <PillInput className='mt-6' rightSlot={<Button className='!rounded-full !px-4 !py-3 !text-sm !mr-1'>Subscribe</Button>} />
                     </div>
                 </div>
                 <div className='pt-[90px] mb-5'>

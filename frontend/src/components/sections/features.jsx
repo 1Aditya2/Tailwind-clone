@@ -37,7 +37,7 @@ const Features = () => {
                                     <p className='mb-[1.875rem] text-center text-base text-text-secondary'>
                                     {content}
                                     </p>
-                                    <p className='flex cursor-pointer h-12 w-full items-center justify-center gap-1.5 rounded-lg bg-primary-25 text-sm text-primary duration-200 group-hover:bg-primary group-hover:text-white hover:!bg-primary-600'>
+                                    <p className='flex cursor-pointer h-12 w-full items-center justify-center gap-1.5 rounded-md bg-primary-25 text-sm text-primary duration-200 group-hover:bg-primary group-hover:text-white hover:!bg-primary-600'>
                                         Explore Now
                                         <ChevronRight/>
                                     </p>

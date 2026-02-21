@@ -7,7 +7,7 @@ const Components = () => {
             <div className='container'>
                 <div className='mx-auto mb-12 w-full max-w-[470px] text-center lg:mb-[3.75rem]'>
                     <p class="mb-5 text-lg text-primary">Other Notable Features</p>
-                    <p className='text-3xl font-bold !leading-[1.2] text-title-color md:text-[40px]'>
+                    <p className='text-3xl font-bold !leading-[1.2] text-title md:text-[40px]'>
                         Build Admin Panel Effortlessly
                     </p>
                 </div>
@@ -20,7 +20,7 @@ const Components = () => {
                               ? <div key={i} className='flex items-center gap-[3.75rem] max-lg:flex-col max-lg:gap-y-10 xl:gap-24'>
                               <div class="w-full max-lg:mx-auto lg:max-w-[500px]">
                                   <h3 class="mb-[18px] text-lg text-primary">Your Ultimate Admin Template</h3>
-                                  <h4 class="text-2xl font-semibold text-title-color xl:text-4xl">7 Unique Dashboards for Various Use-cases</h4>
+                                  <h4 class="text-2xl font-semibold text-title xl:text-4xl">7 Unique Dashboards for Various Use-cases</h4>
                                   <div class="mt-8">
                                       <div class="mb-9">
                                           <h5 class="mb-2 text-xl font-semibold text-text">Dark/Light Mode Support</h5>

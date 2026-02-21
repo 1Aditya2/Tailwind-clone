@@ -23,7 +23,7 @@ const Dashboard = () => {
                                     <div className='w-10 mb-[1.875rem] h-10 flex items-center bg-white justify-center rounded-full'>
                                     <Code className='text-primary w-full h-full'/>
                                     </div>
-                                    <p className='mb-4 font-medium text-xl text-title md:text-2xl lg:text-xl xl:text-2xl'>
+                                    <p className='mb-4 font-semibold text-xl text-title md:text-2xl lg:text-xl xl:text-2xl'>
                                         {title}
                                     </p>
                                     <p className='text-base font-light !leading-normal text-text-secondary'>
@@ -39,7 +39,7 @@ const Dashboard = () => {
                         return (
                             <div className='flex items-center gap-4 rounded-3xl border border-stroke-secondary bg-white px-4 py-3 duration-200 hover:border-primary-200 md:px-[1.875rem] md:py-6'>
                                 <div className='flex items-center gap-4'>
-                                    <div className='w-9 h-9 flex items-center bg-white justify-center rounded-full'>
+                                    <div className='h-7 w-7 xl:h-9 xl:w-9 md:h-9 md:w-9 lg:h-7 lg:w-7 flex items-center bg-white justify-center rounded-full'>
                                     <Code className='text-primary w-full h-full'/>
                                     </div>
                                     <p className='text-lg font-medium text-text md:text-xl lg:text-lg xl:text-xl'>

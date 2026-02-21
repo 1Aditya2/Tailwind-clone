@@ -26,7 +26,7 @@ const DashboardVariations = () => {
                                         <img src={image3} alt='image-3' />
                                     </div>
                                     <div className='invisible absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center rounded-xl border border-stroke-secondary bg-[rgba(152,162,179,0.32)] opacity-0 backdrop-blur-[15px] duration-200 group-hover:visible group-hover:opacity-100'>
-                                        <Button className='!text-sm'>
+                                        <Button className='!text-sm !px-10 !gap-1 !py-3.5'>
                                             Preview
                                             <MoveUpRight size={16} />
                                         </Button>
