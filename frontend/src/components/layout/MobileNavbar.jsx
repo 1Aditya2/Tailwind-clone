@@ -6,6 +6,7 @@ import Accordion from '../ui/Accordion';
 
 const MobileNavbar = ({ show = false }) => {
     return (
+        
         <div className={`${show ? 'visible opacity-100' : 'invisible opacity-0'} fixed z-[9999] h-screen w-full overflow-hidden duration-200 xl:hidden`}>
             <div className='relative h-full bg-white pb-[7.5rem] pt-20'>
                 <div className='p-5 pt-0 overflow-y-auto max-h-full'>
@@ -13,10 +14,10 @@ const MobileNavbar = ({ show = false }) => {
                         {mobileNavData.map(({ type, label, content }, i) => {
                             return (
                                 type === 'text' ?
-                                <li key={i} className={`flex items-center font-light justify-between gap-2 p-3 text-base text-text duration-200 hover:text-primary border-b border-stroke`}>
-                                    <a href='/'>{label}</a>
-                                </li>
-                                : <Accordion content={content} key={i} title={label}/>
+                                    <li key={i} className={`flex items-center font-light justify-between gap-2 p-3 text-base text-text duration-200 hover:text-primary border-b border-stroke`}>
+                                        <a href='/'>{label}</a>
+                                    </li>
+                                    : <Accordion content={content} key={i} title={label} />
                             );
                         })}
                     </ul>

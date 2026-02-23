@@ -41,7 +41,6 @@ const DashboardAd = () => {
                     </div>
                     <div className='relative mt-5 max-w-[720px] rounded-t-lg lg:ml-auto'>
                         <img src={cover} alt='cover'/>
-                        
                     </div>
                     <div className='absolute right-0 top-0'>
                         <Leftpart/>

@@ -14,14 +14,14 @@ export default function Accordion({
     <div>
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex w-full border-b border-gray-200 items-center justify-between p-3 text-left"
+        className="flex group w-full border-b border-gray-200 items-center justify-between p-3 text-left"
       >
-        <span className="text-base font-light text-text">
+        <span className="text-base font-light text-text group-focus:text-primary">
           {title}
         </span>
 
         <Icon
-          className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${
+          className={`h-5 group-focus:text-primary w-5 text-gray-500 transition-transform duration-200 ${
             open ? "rotate-180" : ""
           }`}
         />

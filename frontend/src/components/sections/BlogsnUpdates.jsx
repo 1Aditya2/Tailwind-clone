@@ -27,12 +27,12 @@ const BlogsnUpdates = () => {
                                         <p>{date}</p>
                                     </div>
                                     <p className='mb-2 cursor-pointer line-clamp-2 text-xl font-medium text-title duration-200 hover:text-primary'>
-                                    {title}
+                                        {title}
                                     </p>
                                     <p className='mb-5 line-clamp-4 text-base text-text-secondary font-light'>{content}</p>
                                     <Button className='!px-5 !text-sm'>
                                         Read More
-                                        <ArrowRight size={18}/>
+                                        <ArrowRight size={18} />
                                     </Button>
                                 </div>
                             </div>
